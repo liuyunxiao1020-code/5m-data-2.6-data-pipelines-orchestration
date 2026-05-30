@@ -1,0 +1,30 @@
+[0m21:14:20.230653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f1658b2e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f1658b2dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f1658b2d90>]}
+
+
+============================== 21:14:20.234233 | c8661544-a628-4eb7-af4f-8ba85a8ec696 ==============================
+[0m21:14:20.234233 [info ] [MainThread]: Running with dbt=1.10.9
+[0m21:14:20.234663 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'profiles_dir': '/home/liuyx/.dbt', 'invocation_command': 'dbt init resale_flat', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'empty': 'None', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'log_path': 'logs', 'log_cache_events': 'False', 'warn_error': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'version_check': 'True', 'static_parser': 'True', 'write_json': 'True', 'printer_width': '80', 'quiet': 'False', 'debug': 'False'}
+[0m21:14:20.257592 [debug] [MainThread]: Starter project path: /home/liuyx/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m21:14:20.265136 [info ] [MainThread]: 
+Your new dbt project "resale_flat" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:14:20.265606 [info ] [MainThread]: Setting up your profile.
+[0m21:15:43.928493 [info ] [MainThread]: Profile resale_flat written to /home/liuyx/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:15:43.929207 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 81.08469, "process_in_blocks": "389632", "process_kernel_time": 3.325445, "process_mem_max_rss": "374968", "process_out_blocks": "80", "process_user_time": 6.207216}
+[0m21:15:43.929843 [debug] [MainThread]: Command `dbt init` succeeded at 21:15:43.929673 after 81.09 seconds
+[0m21:15:43.930145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f1658b82d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f16592bc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f16a2ff5d0>]}
+[0m21:15:43.930456 [debug] [MainThread]: Flushing usage events
+[0m21:15:44.958984 [debug] [MainThread]: An error was encountered while trying to flush usage events

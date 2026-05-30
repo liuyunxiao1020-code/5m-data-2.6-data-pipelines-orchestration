@@ -1,0 +1,14 @@
+resale_flat:
+  outputs:
+    dev:
+      dataset: resale
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /home/liuyx/5m-data-2.6-data-pipelines-orchestration/my-project-learning-496207-d95254168283.json # Use your path of key file
+      location: US
+      method: service-account
+      priority: interactive
+      project: my-project-learning-496207 # enter your google project id
+      threads: 1
+      type: bigquery
+  target: dev

@@ -1,0 +1,27 @@
+[32m2026-05-30 09:52:54 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - 72686cb1-6a7a-4584-91bc-da3d1d458402 - 40830 - LOGS_CAPTURED - Started capturing logs in process (pid: 40830).
+[32m2026-05-30 09:52:54 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - 72686cb1-6a7a-4584-91bc-da3d1d458402 - 40830 - pandas_releases - STEP_START - Started execution of step "pandas_releases".
+[32m2026-05-30 09:52:54 +0800[0m - dagster - [34mERROR[0m - [31mpandas_job - 72686cb1-6a7a-4584-91bc-da3d1d458402 - 40830 - pandas_releases - STEP_FAILURE - Execution of step "pandas_releases" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "pandas_releases"::
+
+TypeError: string indices must be integers, not 'str'
+
+Stack Trace:
+  File "/home/liuyx/miniconda3/envs/dagster/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "/home/liuyx/miniconda3/envs/dagster/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/home/liuyx/miniconda3/envs/dagster/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 135, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/liuyx/miniconda3/envs/dagster/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 115, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liuyx/5m-data-2.6-data-pipelines-orchestration/dagster-orchestration/dagster_orchestration/assets.py", line 28, in pandas_releases
+    releases_with_essential_fields = [
+                                     ^
+  File "/home/liuyx/5m-data-2.6-data-pipelines-orchestration/dagster-orchestration/dagster_orchestration/assets.py", line 30, in <listcomp>
+    "version": release["tag_name"],
+               ~~~~~~~^^^^^^^^^^^^
+[0m

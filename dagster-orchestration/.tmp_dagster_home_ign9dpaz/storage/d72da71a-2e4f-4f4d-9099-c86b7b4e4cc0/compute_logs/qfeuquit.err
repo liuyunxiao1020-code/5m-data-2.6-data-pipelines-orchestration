@@ -1,0 +1,7 @@
+[32m2026-05-30 17:59:54 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - d72da71a-2e4f-4f4d-9099-c86b7b4e4cc0 - 493512 - LOGS_CAPTURED - Started capturing logs in process (pid: 493512).
+[32m2026-05-30 17:59:54 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - d72da71a-2e4f-4f4d-9099-c86b7b4e4cc0 - 493512 - pandas_releases - STEP_START - Started execution of step "pandas_releases".
+[32m2026-05-30 17:59:55 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - d72da71a-2e4f-4f4d-9099-c86b7b4e4cc0 - 493512 - pandas_releases - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2026-05-30 17:59:55 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - d72da71a-2e4f-4f4d-9099-c86b7b4e4cc0 - pandas_releases - Writing file at: /home/liuyx/5m-data-2.6-data-pipelines-orchestration/dagster-orchestration/.tmp_dagster_home_ign9dpaz/storage/pandas_releases using PickledObjectFilesystemIOManager...
+[32m2026-05-30 17:59:55 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - d72da71a-2e4f-4f4d-9099-c86b7b4e4cc0 - 493512 - pandas_releases - ASSET_MATERIALIZATION - Materialized value pandas_releases.
+[32m2026-05-30 17:59:55 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - d72da71a-2e4f-4f4d-9099-c86b7b4e4cc0 - 493512 - pandas_releases - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-30 17:59:55 +0800[0m - dagster - [34mDEBUG[0m - pandas_job - d72da71a-2e4f-4f4d-9099-c86b7b4e4cc0 - 493512 - pandas_releases - STEP_SUCCESS - Finished execution of step "pandas_releases" in 1.13s.
