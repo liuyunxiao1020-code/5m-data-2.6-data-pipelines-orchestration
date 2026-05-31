@@ -25,7 +25,7 @@ plugins:
     pip_url: git+https://github.com/z3z1ma/target-bigquery.git setuptools<80
     config:
       batch_size: 104857600
-      credentials_path: /home/liuyx/5m-data-2.6-data-pipelines-orchestration/my-project-learning-496207-d95254168283.json
+      credentials_path: /home/liuyx/5m-data-2.6-data-pipelines-orchestration/credentials/my-project-learning-496207-d95254168283.json
       dataset: resale
       denormalized: true
       flattening_enabled: true
