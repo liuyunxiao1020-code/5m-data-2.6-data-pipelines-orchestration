@@ -5,3 +5,4 @@ output/*.db*
 *.pyc
 __pycache__/
 .env
+my-project-learning-496207-d95254168283.json    
